@@ -24,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.primary};
     margin-right: 8px;
   }
+  .desktop-icon {
+    display: none !important
+  }
+  .lmsfeu {
+    display: none !important
+  }
 `
 
 export default GlobalStyle

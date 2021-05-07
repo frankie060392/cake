@@ -23,7 +23,6 @@ import AppBody from '../AppBody'
 export default function Pool() {
   const theme = useContext(ThemeContext)
   const { account } = useActiveWeb3React()
-  console.log("🚀 ~ file: index.tsx ~ line 26 ~ Pool ~ account", account)
   const TranslateString = useI18n()
 
   // fetch the user's balances of all tracked V2 LP tokens

@@ -48,5 +48,4 @@ store.dispatch(updateVersion())
 export default store
 
 export type AppState = ReturnType<typeof store.getState>
-console.log("🚀 ~ file: index.ts ~ line 51 ~ AppState", store.getState())
 export type AppDispatch = typeof store.dispatch

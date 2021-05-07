@@ -43,7 +43,6 @@ const listCache: WeakMap<TokenList, TokenAddressMap> | null =
 
 export function listToTokenMap(list: TokenList): TokenAddressMap {
   const result = listCache?.get(list)
-  console.log("🚀 ~ file: hooks.ts ~ line 46 ~ listToTokenMap ~ result", result)
   if (result) return result
 
   const map = list.tokens.reduce<TokenAddressMap>(
@@ -67,7 +66,6 @@ export function listToTokenMap(list: TokenList): TokenAddressMap {
     },
     { ...EMPTY_LIST }
   )
-  console.log("🚀 ~ file: hooks.ts ~ line 70 ~ listToTokenMap ~ map", map)
   listCache?.set(list, map)
   return map
 }

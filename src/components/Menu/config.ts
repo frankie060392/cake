@@ -23,10 +23,10 @@ const config: MenuEntry[] = [
         label: 'Exchange',
         href: '/swap',
       },
-      // {
-      //   label: 'Liquidity',
-      //   href: 'https://exchange.pancakeswap.finance/#/pool',
-      // },
+      {
+        label: 'Liquidity',
+        href: '/pool',
+      },
       // {
       //   label: 'V1 Liquidity (Old)',
       //   href: '/pool',
