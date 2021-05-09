@@ -62,6 +62,7 @@ export default function App() {
   }
 
   useEffect(() => {
+    try {
     setTimeout(() => {
       const links=document.getElementsByTagName('a')
       for (let i = 0; i<links.length; i++)
@@ -80,8 +81,10 @@ export default function App() {
       _div?.appendChild(node)
       logo?.closest('a')?.remove()
     })
+  }catch(ex) {
+    console.log(ex)
+  }
 
-    const tele = document.getElementsByTagName('a.')
     const storedLangCode = localStorage.getItem(CACHE_KEY)
     if (storedLangCode) {
       const storedLang = getStoredLang(storedLangCode)
