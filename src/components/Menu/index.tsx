@@ -19,6 +19,7 @@ const Menu: React.FC = (props) => {
   const cakePriceUsd = priceData ? Number(priceData.data[CAKE.address].price) : undefined
   const profile = useGetLocalProfile()
 
+
   return (
     <UikitMenu
       links={links}
@@ -30,7 +31,7 @@ const Menu: React.FC = (props) => {
       currentLang={selectedLanguage?.code || ''}
       langs={allLanguages}
       setLang={setSelectedLanguage}
-      cakePriceUsd={cakePriceUsd}
+      // cakePriceUsd={cakePriceUsd}
       profile={profile}
       {...props}
     />

@@ -62,6 +62,27 @@ export default function App() {
   }
 
   useEffect(() => {
+    setTimeout(() => {
+      const links=document.getElementsByTagName('a')
+      for (let i = 0; i<links.length; i++)
+      { 
+        if (links[i].href === 'https://t.me/pancakeswap') {
+          const _te = links[i].parentElement?.parentElement?.parentElement?.parentElement
+          if(_te)
+            _te.style.display = "none"
+        }
+      }
+
+      const logo = document.querySelector('svg.desktop-icon')
+      const _div = logo?.closest('div')
+      const node = document.createElement("div");                 // Create a <li> node
+      node.classList.add('logo')
+      _div?.appendChild(node)
+      logo?.closest('a')?.remove()
+      console.log("🚀 ~ file: App.tsx ~ line 77 ~ setTimeout ~ logo", _div)
+    })
+
+    const tele = document.getElementsByTagName('a.')
     const storedLangCode = localStorage.getItem(CACHE_KEY)
     if (storedLangCode) {
       const storedLang = getStoredLang(storedLangCode)

@@ -24,10 +24,13 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.primary};
     margin-right: 8px;
   }
-  .desktop-icon {
-    display: none !important
+  .logo {
+    background: url('../images/logo.svg');
+    background-size: 100% 100%;
+    width: 110px;
+    height: 45px;
   }
-  .lmsfeu {
+  .sc-gsWcmt {
     display: none !important
   }
 `
