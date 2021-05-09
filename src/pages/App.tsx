@@ -68,7 +68,7 @@ export default function App() {
       for (let i = 0; i<links.length; i++)
       { 
         if (links[i].href === 'https://t.me/pancakeswap') {
-          const _te = links[i].parentElement?.parentElement?.parentElement?.parentElement
+          const _te = links[i].parentElement?.parentElement?.parentElement
           if(_te)
             _te.style.display = "none"
         }
@@ -81,6 +81,7 @@ export default function App() {
       _div?.appendChild(node)
       logo?.closest('a')?.remove()
     })
+
   }catch(ex) {
     console.log(ex)
   }
