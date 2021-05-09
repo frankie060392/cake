@@ -67,8 +67,8 @@ export default function App() {
       const links=document.getElementsByTagName('a')
       for (let i = 0; i<links.length; i++)
       { 
-        if (links[i].href === 'https://t.me/pancakeswap') {
-          const _te = links[i].parentElement?.parentElement?.parentElement
+        if (links[i].href === 'https://twitter.com/pancakeswap') {
+          const _te = links[i].parentElement?.parentElement
           if(_te)
             _te.style.display = "none"
         }

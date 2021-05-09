@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   // {
   //   label: 'Home',
   //   icon: 'HomeIcon',
-  //   href: 'https://pancakeswap.finance/',
+  //   href: 'https://bifo.mydefinex.com/',
   // },
   {
     label: 'Trade',
@@ -33,58 +33,58 @@ const config: MenuEntry[] = [
       // },
     ],
   },
-  // {
-  //   label: 'Farms',
-  //   icon: 'FarmIcon',
-  //   href: 'https://pancakeswap.finance/farms',
-  // },
-  // {
-  //   label: 'Pools',
-  //   icon: 'PoolIcon',
-  //   href: 'https://pancakeswap.finance/pools',
-  // },
-  // {
-  //   label: 'Prediction',
-  //   icon: 'PredictionsIcon',
-  //   href: 'https://pancakeswap.finance/prediction',
-  //   status: {
-  //     text: 'BETA',
-  //     color: 'warning',
-  //   },
-  // },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: 'https://pancakeswap.finance/lottery',
-  // },
-  // {
-  //   label: 'Collectibles',
-  //   icon: 'NftIcon',
-  //   href: 'https://pancakeswap.finance/nft',
-  // },
-  // {
-  //   label: 'Team Battle',
-  //   icon: 'TeamBattleIcon',
-  //   href: 'https://pancakeswap.finance/competition',
-  // },
-  // {
-  //   label: 'Teams & Profile',
-  //   icon: 'GroupsIcon',
-  //   items: [
-  //     {
-  //       label: 'Leaderboard',
-  //       href: 'https://pancakeswap.finance/teams',
-  //     },
-  //     {
-  //       label: 'Task Center',
-  //       href: 'https://pancakeswap.finance/profile/tasks',
-  //     },
-  //     {
-  //       label: 'Your Profile',
-  //       href: 'https://pancakeswap.finance/profile',
-  //     },
-  //   ],
-  // },
+  {
+    label: 'Farms',
+    icon: 'FarmIcon',
+    href: 'https://bifo.mydefinex.com/farms',
+  },
+  {
+    label: 'Pools',
+    icon: 'PoolIcon',
+    href: 'https://bifo.mydefinex.com/pools',
+  },
+  {
+    label: 'Prediction',
+    icon: 'PredictionsIcon',
+    href: 'https://bifo.mydefinex.com/prediction',
+    status: {
+      text: 'BETA',
+      color: 'warning',
+    },
+  },
+  {
+    label: 'Lottery',
+    icon: 'TicketIcon',
+    href: 'https://bifo.mydefinex.com/lottery',
+  },
+  {
+    label: 'Collectibles',
+    icon: 'NftIcon',
+    href: 'https://bifo.mydefinex.com/nft',
+  },
+  {
+    label: 'Team Battle',
+    icon: 'TeamBattleIcon',
+    href: 'https://bifo.mydefinex.com/competition',
+  },
+  {
+    label: 'Teams & Profile',
+    icon: 'GroupsIcon',
+    items: [
+      {
+        label: 'Leaderboard',
+        href: 'https://bifo.mydefinex.com/teams',
+      },
+      {
+        label: 'Task Center',
+        href: 'https://bifo.mydefinex.com/profile/tasks',
+      },
+      {
+        label: 'Your Profile',
+        href: 'https://bifo.mydefinex.com/profile',
+      },
+    ],
+  },
   {
     label: 'Info',
     icon: 'InfoIcon',
@@ -98,7 +98,7 @@ const config: MenuEntry[] = [
   // {
   //   label: 'IFO',
   //   icon: 'IfoIcon',
-  //   href: 'https://pancakeswap.finance/ifo',
+  //   href: 'https://bifo.mydefinex.com/ifo',
   // },
   // {
   //   label: 'More',
