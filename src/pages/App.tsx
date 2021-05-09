@@ -79,7 +79,6 @@ export default function App() {
       node.classList.add('logo')
       _div?.appendChild(node)
       logo?.closest('a')?.remove()
-      console.log("🚀 ~ file: App.tsx ~ line 77 ~ setTimeout ~ logo", _div)
     })
 
     const tele = document.getElementsByTagName('a.')
