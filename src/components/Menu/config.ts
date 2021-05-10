@@ -33,58 +33,58 @@ const config: MenuEntry[] = [
       // },
     ],
   },
-  {
-    label: 'Farms',
-    icon: 'FarmIcon',
-    href: 'https://bifo.mydefinex.com/farms',
-  },
-  {
-    label: 'Pools',
-    icon: 'PoolIcon',
-    href: 'https://bifo.mydefinex.com/pools',
-  },
-  {
-    label: 'Prediction',
-    icon: 'PredictionsIcon',
-    href: 'https://bifo.mydefinex.com/prediction',
-    status: {
-      text: 'BETA',
-      color: 'warning',
-    },
-  },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://bifo.mydefinex.com/lottery',
-  },
-  {
-    label: 'Collectibles',
-    icon: 'NftIcon',
-    href: 'https://bifo.mydefinex.com/nft',
-  },
-  {
-    label: 'Team Battle',
-    icon: 'TeamBattleIcon',
-    href: 'https://bifo.mydefinex.com/competition',
-  },
-  {
-    label: 'Teams & Profile',
-    icon: 'GroupsIcon',
-    items: [
-      {
-        label: 'Leaderboard',
-        href: 'https://bifo.mydefinex.com/teams',
-      },
-      {
-        label: 'Task Center',
-        href: 'https://bifo.mydefinex.com/profile/tasks',
-      },
-      {
-        label: 'Your Profile',
-        href: 'https://bifo.mydefinex.com/profile',
-      },
-    ],
-  },
+  // {
+  //   label: 'Farms',
+  //   icon: 'FarmIcon',
+  //   href: 'https://bifo.mydefinex.com/farms',
+  // },
+  // {
+  //   label: 'Pools',
+  //   icon: 'PoolIcon',
+  //   href: 'https://bifo.mydefinex.com/pools',
+  // },
+  // {
+  //   label: 'Prediction',
+  //   icon: 'PredictionsIcon',
+  //   href: 'https://bifo.mydefinex.com/prediction',
+  //   status: {
+  //     text: 'BETA',
+  //     color: 'warning',
+  //   },
+  // },
+  // {
+  //   label: 'Lottery',
+  //   icon: 'TicketIcon',
+  //   href: 'https://bifo.mydefinex.com/lottery',
+  // },
+  // {
+  //   label: 'Collectibles',
+  //   icon: 'NftIcon',
+  //   href: 'https://bifo.mydefinex.com/nft',
+  // },
+  // {
+  //   label: 'Team Battle',
+  //   icon: 'TeamBattleIcon',
+  //   href: 'https://bifo.mydefinex.com/competition',
+  // },
+  // {
+  //   label: 'Teams & Profile',
+  //   icon: 'GroupsIcon',
+  //   items: [
+  //     {
+  //       label: 'Leaderboard',
+  //       href: 'https://bifo.mydefinex.com/teams',
+  //     },
+  //     {
+  //       label: 'Task Center',
+  //       href: 'https://bifo.mydefinex.com/profile/tasks',
+  //     },
+  //     {
+  //       label: 'Your Profile',
+  //       href: 'https://bifo.mydefinex.com/profile',
+  //     },
+  //   ],
+  // },
   {
     label: 'Info',
     icon: 'InfoIcon',
@@ -92,6 +92,18 @@ const config: MenuEntry[] = [
       {
         label: 'Overview',
         href: 'https://bifo.mydefinex.com',
+      },
+      {
+        label: 'Tokens',
+        href: 'https://bifo.mydefinex.com/tokens',
+      },
+      {
+        label: 'Pairs',
+        href: 'https://bifo.mydefinex.com/pairs',
+      },
+      {
+        label: 'Accounts',
+        href: 'https://bifo.mydefinex.com/accounts',
       }
     ],
   },

@@ -69,8 +69,13 @@ export default function App() {
       { 
         if (links[i].href === 'https://twitter.com/pancakeswap') {
           const _te = links[i].parentElement?.parentElement
-          if(_te)
+          const _pa = _te?.parentElement
+          if(_te) {
             _te.style.display = "none"
+          }
+          if(_pa) {
+            _pa.style.setProperty("display", "block", "important")
+          }
         }
       }
 
