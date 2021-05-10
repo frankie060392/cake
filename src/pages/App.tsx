@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
+import useTheme from 'hooks/useTheme'
 import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
 import { LangType } from '@pancakeswap-libs/uikit'
 import VersionBar from 'components/VersionBar'
@@ -48,11 +49,11 @@ export default function App() {
   const apiKey = `${process.env.REACT_APP_CROWDIN_APIKEY}`
   const projectId = parseInt(`${process.env.REACT_APP_CROWDIN_PROJECTID}`)
   const fileId = 6
-
   const credentials: Credentials = {
     token: apiKey,
   }
-
+ 
+  const { isDark } = useTheme()
   const stringTranslationsApi = new StringTranslations(credentials)
 
   const getStoredLang = (storedLangCode: string) => {
@@ -60,9 +61,9 @@ export default function App() {
       return language.code === storedLangCode
     })[0]
   }
-
   useEffect(() => {
     try {
+
     setTimeout(() => {
       const links=document.getElementsByTagName('a')
       for (let i = 0; i<links.length; i++)
@@ -78,13 +79,6 @@ export default function App() {
           }
         }
       }
-
-      const logo = document.querySelector('svg.desktop-icon')
-      const _div = logo?.closest('div')
-      const node = document.createElement("div");                 // Create a <li> node
-      node.classList.add('logo')
-      _div?.appendChild(node)
-      logo?.closest('a')?.remove()
     })
 
   }catch(ex) {
@@ -99,6 +93,27 @@ export default function App() {
       setSelectedLanguage(EN)
     }
   }, [])
+
+  useEffect(() => {
+    const _logoNode = document.getElementsByClassName('logo')
+    if (_logoNode[0]) {
+      if (isDark) {
+        _logoNode[0]?.classList.remove('logo_dark')
+        _logoNode[0]?.classList.add('logo_white')
+      } else {
+        _logoNode[0]?.classList.remove('logo_white')
+        _logoNode[0]?.classList.add('logo_dark')
+      }
+    } else {
+      const logo = document.querySelector('svg.desktop-icon')
+      const _div = logo?.closest('div')
+      const node = document.createElement("div");  
+      node.classList.add('logo')               // Create a <li> node
+      node.classList.add(isDark ? 'logo_white' : 'logo_dark')
+      _div?.appendChild(node)
+      logo?.closest('a')?.remove()
+    }
+  }, [isDark])
 
   const fetchTranslationsForSelectedLanguage = async () => {
     stringTranslationsApi
