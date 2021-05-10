@@ -36,6 +36,9 @@ const GlobalStyle = createGlobalStyle`
     width: 110px;
     height: 45px;
   }
+  .hide {
+    display: none !important;
+  }
   .sc-gsWcmt {
     display: none !important
   }

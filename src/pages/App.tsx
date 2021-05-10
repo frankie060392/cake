@@ -79,6 +79,8 @@ export default function App() {
           }
         }
       }
+      const node = document.querySelector('[title="Bunny"]');
+      node?.classList.add('hide')
     })
 
   }catch(ex) {
