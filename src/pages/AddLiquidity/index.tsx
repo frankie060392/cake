@@ -117,6 +117,7 @@ export default function AddLiquidity({
   const addTransaction = useTransactionAdder()
 
   async function onAdd() {
+
     if (!chainId || !library || !account) return
     const router = getRouterContract(chainId, library, account)
 
@@ -426,7 +427,6 @@ export default function AddLiquidity({
                         setShowConfirm(true)
                       }
                     }}
-                    disabled
                     variant={
                       !isValid && !!parsedAmounts[Field.CURRENCY_A] && !!parsedAmounts[Field.CURRENCY_B]
                         ? 'danger'
@@ -434,7 +434,8 @@ export default function AddLiquidity({
                     }
                     width="100%"
                   >
-                    {error ?? "You can't add liquidity on V1"}
+                    {error}
+                    {/* {error ?? "You can't add liquidity on V1"} */}
                   </Button>
                 </AutoColumn>
               )}
